@@ -1,0 +1,80 @@
+
+
+1. 	O(1)  —> Adding two numbers together.
+
+	O(log n) —> Trying to find a friend at a concert but a genie tells you whether they are on 
+	the left or right side of any point you pick. 
+
+	O(n)  —> Trying to find a friend at a concert by checking each person individually. 
+
+	O(n log n) —> Sort everyone at a concert by height. Pick a random person and put everyone taller than that 
+    person of the left and everyone shorter on the right. Repeat for each side until the everyone is ordered. 
+
+	O(n**2) —> Trying to find a friend at a concert but starting from scratch every time you see a new person.
+
+     #Using Java 
+	
+2. 	public int[] shuffle(int n){
+		int[] myIntArr = new int[n];
+
+		for (int j = 0; j < n; j ++) {
+			int A = (int) (Math.random() * n);
+			int B = (int) (Math.random() * n );
+			int temp;
+
+			temp = myIntArr[A];
+			myIntArr[A] = myIntArr[B];
+			myIntArr[B] = temp;
+		}
+	}
+	
+3. 	public static int[] newRandomArr(int n){
+		int[] myIntArr = new int[n];
+
+		for (int j = 0; j < n; j ++) {
+			int A = (int) (Math.random() * n);
+			myIntArr[j] = A;
+		
+		}
+		return myIntArr;
+	}
+	
+	public static boolean hasConsecutive(int[] arr){
+		//Assuming there are at least 3 elements in the array:
+		int runner = 0;
+
+		for (int i = 1; i < arr.length; i++){
+			if (arr[i-1] < arr[i]){
+				runner += 1;
+				if (runner == 2){
+					return true;
+				}
+			}else{
+				runner = 0;
+			}
+		
+		}	
+		return false;
+	
+	}
+
+4.	public int binarySearch(int[] arr, int value){
+
+	int left = 0;
+	int right = arr.length - 1;
+
+	while(left <= right){
+		int mid = (left + right) / 2;
+		if(arr[mid] == value){
+			return mid;
+		}
+		if(arr[mid] < value){
+			left = mid + 1;
+		}else {
+			right = mid - 1;
+		}
+	}
+	//This is supposed to represent the case that the value is not found in the array. 
+	return -1;
+
+	} 	
