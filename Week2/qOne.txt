@@ -1,0 +1,18 @@
+
+
+
+1. 
+    a. Stacks: 
+        i. Parking cars in an alley with one exit/entrance. The last car to park is the first one to leave. The first car to park must wait for all the other cars to leave before it can exit. 
+
+        ii. Pringles. The chips that are at the top are eaten first. In order to get to the bottom chip, you need to go through all of the chips on top of it. 
+
+    b. Queues: 
+        i. Waiting in line at the supermarket. The first person in line is the first to check out. The last person in line must wait for all other people to check out first before they can check out. 
+
+        ii. Driving in a tunnel that can only fit the width of one car. The cars that entered the tunnel first are those that will leave first. A car that has just entered the tunnel must wait for all of the other cars to exit before it can exit. 
+
+    c.  Deques: 
+        i. Storing quarters in a quarter roll. You can add and remove quarters to either side of the roll, but in order to get to the middle-most coin, you must remove all the coins on either side of the middle most coin before it can be removed. 
+
+        ii. Some airports allow passengers to enter and exit planes from the back door as well as the front. People who are closest to the front or back doors can exit first. People who are located in the middle must wait for either all the people infront or behind them to exit before they do. In this example we are on an airline where there is no assigned seating and no zoned boarding and you take your seat based only if there is someone seated infront of you. 
