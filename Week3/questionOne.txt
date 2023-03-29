@@ -1,0 +1,21 @@
+Describe worst case data and best case data for:
+
+    Bubble Sort:   
+        Best:   List already sorted
+        Worse:  List sorted in reverse order
+
+    Selection Sort:
+        Best:   List already ascending sorted
+        Worse:  No mins values are in the correct spots
+
+    Insertion Sort:
+        Best:   List sorted in ascending order
+        Worse:  List sorted in reverse order
+
+    Merge Sort:
+        Best:   One subarray has values that are all added before the other
+        Worse:  Subarrays have values that must alternatively be added to the new array
+
+    Quicksort:
+        Best:   Pivot ends up in the middle of subarrays
+        Worse:  Pivot always ends up on one end of the subarrays
